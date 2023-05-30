@@ -1,0 +1,5 @@
+/config/.env
+/config/config.json
+/config/template.json
+notes.txt
+Dockerfile
