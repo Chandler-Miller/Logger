@@ -50,7 +50,7 @@ func handleRequest(fn http.HandlerFunc) http.HandlerFunc {
 			return r.FindStringSubmatch(fmt.Sprintf("%+v", w))[1]
 		}
 
-		log.Print(`%s - [%s] %s %s %s(%s) - "User-Agent: %s"`,
+		log.Printf(`%s - [%s] %s %s %s(%s) - "User-Agent: %s"`,
 			r.RemoteAddr, r.Proto, r.Method, r.RequestURI,
 			getStatus(w), getWrote(w), // %s(%s)
 			r.Header.Get("User-Agent"))

@@ -45,5 +45,5 @@ func addLogHandler(w http.ResponseWriter, r *http.Request) {
 }
 
 func getLogHandler() {
-
+	
 }
